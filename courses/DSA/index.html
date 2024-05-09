@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+    <section class="container">
+        <div class="content">
+            <h1>Chapter 1 : Introduction To Data Structure</h1>
+            <h3>What is Data Structure?</h3>
+            <p>- A technique of organizing and storing of different types of data items in computer memory.</p>
+            <img src="img/ds.jpg" alt="ds" style="width:80%;">
+            <p>- It maintains the logical relationship existing between individual data elements.</p>
+            <p>- Examples of data structure are arrays, linked list, stack, queue, etc.</p>
+            <p>- Data structure is widely used in every aspects of computer science i.e. OS, complier design, AI,
+                Graphics and more.</p>
+            <p>- it helps to enhance the performance of a software.</p>
+            <p>- It mainly specifies four things:
+            <ul type="disc">
+                <li>Organization of data</li>
+                <li>Accessing nethods</li>
+                <li>Degree of associativity</li>
+                <li>Processing alternatives for information</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="content">
+            <h3>Why data structure is needed?</h3>
+            <p>- As per the application is getting complex and data is increasing day by day, Data structure is needed to
+                handle:
+            <ul>
+                <li>Processor speed</li>
+                <li>Data search</li>
+                <li>multiple response</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="content">
+            <h3>Classification of data structure:</h3>
+            <p>The data structure is classified into two types:
+                <ul>
+                    <li>Primitive data structure</li>
+                    <li>non-primitive data structure</li>
+                </ul>
+            </p>
+            <img src="img/ds-classification.png" alt="DS Classification">
+        </div>
+
+        <div class="content">
+            <h3>1) Primitive Data Structure</h3>
+            <p>
+                <ul type="none">
+                    <li>- Basic data structure </li>
+                    <li>- Directly operated upon machine instruction.</li>
+                    <li>- Example: int, float, double, etc in case of C programming are known as primititve data types</li>
+                    <li>- Used to store small data.</li>
+                    <li><span class="purple">- int a = 5;</span><span class="grey"> // a stores 5</span></li>
+                </ul>
+            </p>
+
+            <h3>2) Non-Primitive Data Structure</h3>
+            <p>
+                <ul type="none">
+                    <li>- Highly developed complex data structure, develop from primititve data structure. </li>
+                    <li>- Responsible for organizing the groups pf homogeneus and heterogeneus data elements.</li>
+                    <li>- Responsible for organizing the group of homogeneous and heterogeneus data elements.</li>
+                </ul>
+            </p>
+            <div class="note">
+                <p>here, Homogeneous data element means the same type, Heterogeneous means disverse type.</p>
+                <p>Array are homogeneous, since you declare the single type as part of the defination. class tends to be heterogeneus you have integers, strings, and other classes, etc.</p>
+            </div>
+            
+            <p><b> - Types of non-primitive data structure:</b></p>
+            <p>
+                <ol type="a">
+                    <li>Linear Data Structure</li>
+                    <li>Non-linear Data Structure</li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="content">
+            <h3>a) Linear Data Structure</h3>
+            <p> 
+                <ul type="none">
+                    <li>- Data is stored in linear order means sequentially.</li>
+                    <li>
+                        <div class="note">
+                           <p>Data are aranged in such a way that one elements is adjacnet to its previous one and the next element.</p>
+                        </div>
+                    </li>
+                    <li>- Elements are stored in non-hiearchical way where each element has the sucessor and predecessors except the first and last element.</li>
+                    <li>- here operation on this data structure is only possible in a sequence i.e we cannot insert the element into any location of our choice.</li>
+                    <li>- Example: Array, stacks, queue, and linked lists.</li>
+                    <li>- They can be implemented in memory using two ways:</li>
+                    <li>
+                    <div class="note">
+                        <p><b>Method 1: </b> Having a linear relationship between elements by means of sequential memory locations.</p>
+                        <p><b>Method 2: </b> Having a linear relationship by using links.</p>
+                    </div>
+                    </li>
+                    <li><b><u>List of operation applied on linear data structure</u></b>
+                        <ul type="disc">
+                            <li>Add an element</li>
+                            <li>Delete an element</li>
+                            <li>Traverse</li>
+                            <li>Sort the list of elements</li>
+                            <li>Search for a data elements</li>
+                            
+                                <div class="note">
+                                    <p>Traverse is a process in which each element of a data structure is accessed. Accessing an element means visiting every element at least once. Traversing is performed to display every element of dat structure or to perform only operation on its elements.</p>
+                                </div>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            
+        </div>
+
+        <div class="content">
+            <h3>b) Non-Linear Data Structure</h3>
+            <p>
+                <ul type="none">
+                    <li>- Data doesn't form a sequence i.e. each element is conected with two or more other items in a non-linear arrangement.</li>
+                    <li>- Data elements are orgranized in some arbitary function.</li>
+                    <li>- Example: trees, graphs</li>
+                    <li class="padding-line"><u><b>List of operation applied on non-linear data structure</b></u>
+                    <ul type="disc">
+                        <li>Add element</li>
+                        <li>Delete element</li>
+                        <li>Display the element</li>
+                        <li>sort the list of element</li>
+                        <li>search for a data element</li>
+                    </ul></li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="content">
+            <h3>Representation of Data Structure</h3>
+            <p>- Two ways:
+                <ol type="i">
+                    <li>Sequential Representation</li>
+                    <li>Linked Representation</li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="content">
+            <h3>i) Sequential Representation</h3>
+            <p>- In this Organization, the elements or components of the system are arranged in a specific order and each element depends on the previous one.</p>
+            <p>- <b>Advantage: </b> faster access to elements (less time to retrive the data)</p>
+            <p>- Can be used for implementing data structure like array.</p>
+            <p>- This organization is best for data structure that need to be accessed frequently and are relatively static (fixed, same,doesn't change)</p>
+            <img src="img/sequential_repre.jpg" alt="sequential Representation" style="width:50%">;
+            <p>
+                <table border="1px">
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                        <td>H</td>
+                    </tr>
+                </table>
+            </p>
+            
+            <h3>Sequential Representation of binary tree:</h3>
+            <p>
+                <ul>
+                    <li>Using one dimensational array</li>
+                    <li>Array, eg. Tree[] stores element of tree.</li>
+                    <li>An empty tree or sub-tree is specified using null</li>
+                    <li>Array is used to implement heap</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="content">
+            <img src="img/sequential_repre.jpg" alt="" style="width:50%">
+            
+        </div>
+    </section>
+</body>
+
+</html>

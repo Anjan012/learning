@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<link rel="stylesheet" href="css/java.css">
+<body>
+    <section class="introduction">
+        <div class="intro-align">
+            <h3>Introduction to Java</h3>
+            <p>Java is a popular, general-purpose, object-oriented programming language developed by Sun Microsystems (now owned by Oracle) in the 1990s. </p>
+            <p>Java is widely used in a variety of applications, including web development (e.g., Java servlets, JavaServer Pages), mobile applications (Android apps), enterprise software, scientific computing, and game development.</p>
+        </div>
+
+        <div class="intro-align">
+            <h3>Features of java</h3>
+            <p><b>Object-Oriented: </b> Java follows the principles of object-oriented programming (OOP), which includes concepts like classes, objects, inheritance, polymorphism, and encapsulation.</p>
+            <p><b>Platform-Independent:  </b> Java programs are compiled into bytecode, which can be executed by the JVM on any platform that supports it, making Java code highly portable across different operating systems and hardware architectures.</p>
+            <p><b>Automatic Memory Management: </b> Java employs automatic memory management through a garbage collector, which automatically reclaims memory occupied by objects that are no longer in use, relieving developers from the task of manual memory management.</p>
+        </div>
+
+        <div class="intro-align">
+            <h3>How java works?</h3>
+            <img src="img/execution.png" alt="execution" width="90%">
+            <p>Java is compiled into the bytecode and then it is interpreted to machine code.</p>
+        </div>
+        <div class="intro-align">
+            <h3>Basic structure of java</h3>
+            <img src="img/basic_structure.png" alt="execution" width="70%">
+            <p>From above: </p>
+            <p><span class="color-purple">public class Main{ </span>: This line declares a new class named "Main" and makes it accessible from anywhere (public).</p>
+            <p> <span class="color-purple">public static void main(String[] args){ </span>: This is the main method, which is the entry point of a Java program. It must be present for the program to run.</p>
+                <div class="intro-mid">
+            <ul type="dot">
+                <li><span class="color-purple">public</span>: This keyword means the method can be accessed from anywhere.</li>
+                <li><span class="color-purple">static</span>:  This keyword indicates that the method belongs to the class itself, not any specific instance (object) of the class.</li>
+                <li><span class="color-purple">void</span>: This keyword specifies that the method does not return any value.</li>
+                <li><span class="color-purple">main</span>: This is the name of the method, which must be "main" for the program to run.</li>
+                <li><span class="color-purple">(String[] args)</span>: This part defines the input parameters of the method, which can be used to pass command-line arguments to the program.</li>
+            </ul>
+            </div>
+        </div>
+        <div class="intro-align">
+            <h2>Chapter 1 - Variables and datatypes</h2>
+            <h3>Variable</h3>
+            <p>A variable is a named container that stores a value of a specific data type. </p>
+            <img src="img/var1.png" alt="" width="60%"> <br>
+            <img src="img/var2.png" alt="" width="60%">
+            <p>Example:</p>
+            <img src="img/var3.png" alt="" width="60%">
+            <p>From above: </p>
+            <div class="intro-mid">
+                
+            <p><span class="color-purple">int x =5;</span>
+                <div class="left-margin">
+            <ul type="disc">
+                <li><span class="color-purple">int</span> is a data type that represents integer values (whole numbers).</li>
+                <li><span class="color-purple">x</span>is the variable name.</li>
+                <li><span class="color-purple">5</span> is the value assigned to the variable x.</li>
+            </ul></div></p>
+
+            <p><span class="color-purple">double y = 3.5;</span>
+                <div class="left-margin">
+            <ul type="disc">
+                <li><span class="color-purple">double </span> is a data type that represents floating-point numbers (numbers with decimal points).</li>
+                <li><span class="color-purple">y</span> is the variable name.</li>
+                <li><span class="color-purple">3.5</span> is the value assigned to the variable y.</li>
+            </ul></div></p>
+
+            <p><span class="color-purple">String name = "john";</span>
+                <div class="left-margin">
+            <ul type="disc">
+                <li><span class="color-purple">String </span>  is a data type that represents text or sequence of characters.</li>
+                <li><span class="color-purple">name</span> is the variable name.</li>
+                <li><span class="color-purple">"john"</span>is the string value assigned to the variable name. Note that strings are enclosed in double quotes.</li>
+            </ul></div></p>
+
+            <p><span class="color-purple">boolean z = true;</span><div class="left-margin">
+            <ul type="disc">
+                <li><span class="color-purple">boolean </span>  is a data type that can only hold one of two values: true or false.</li>
+                <li><span class="color-purple">z</span> is the variable name.</li>
+                <li><span class="color-purple">true</span> is the boolean value assigned to the variable z.</li>
+            </ul>
+        </div></p>
+            </div>
+        </div>
+
+        <div class="intro-align">
+        <table border="1">
+            <thead>
+              <tr>
+                <th>Data Type</th>
+                <th>Description</th>
+                <th>Range</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>byte</td>
+                <td>Integer value</td>
+                <td>-128 to 127</td>
+              </tr>
+              <tr>
+                <td>short</td>
+                <td>Integer value</td>
+                <td>-32,768 to 32,767</td>
+              </tr>
+              <tr>
+                <td>int</td>
+                <td>Integer value</td>
+                <td>-2,147,483,648 to 2,147,483,647</td>
+              </tr>
+              <tr>
+                <td>long</td>
+                <td>Integer value</td>
+                <td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+              </tr>
+              <tr>
+                <td>float</td>
+                <td>Floating-point value</td>
+                <td>Approximately ±3.40282347E+38F (6-7 significant decimal digits)</td>
+              </tr>
+              <tr>
+                <td>double</td>
+                <td>Floating-point value</td>
+                <td>Approximately ±1.79769313486231570E+308 (15 significant decimal digits)</td>
+              </tr>
+              <tr>
+                <td>char</td>
+                <td>Single character</td>
+                <td>0 to 65,536 (unsigned)</td>
+              </tr>
+              <tr>
+                <td>boolean</td>
+                <td>Logical value</td>
+                <td>true or false</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+    </section>
+
+    <section class = methods>
+      <div class="intro-align">
+        <h2>JAVA Methods</h2>
+        <p>- A method is a block of code that is executed whenever it is called upon. </p>
+        <p>- Methods are like function (reuse time and again</p>
+        <p>- static means that the method belongs to the main class and not an object of the main class.</p>
+        <p>- void means that this method doesn't have to return value.</p>
+        <p>Example: </p>
+        <img src="img/method1.png" alt="method">
+        <p>Output: hello world!</p>
+      </div>
+
+      <div class="intro-align">
+        <h3>Parameter and Arguments</h3>
+        <p>- Parameters are the variables defined in the method declaration. </p>
+        <p> - Arguments are the actual values that are passed to the method when it is called.</p>
+        <img src="img/parameterand args.png" alt="parameterandArgument">
+        <p>In the add method, int a and int b are parameters. When the method is called with calculator.add(5, 3), 5 and 3 are the arguments that get assigned to the a and b parameters, respectively.</p>
+      </div>
+<div class="intro-align table">
+      <h2>Parameters vs Arguments</h2>
+   <table>
+       <tr>
+           <th>Aspect</th>
+           <th>Parameters</th>
+           <th>Arguments</th>
+       </tr>
+       <tr>
+           <td>Definition</td>
+           <td>Variables defined in the method declaration</td>
+           <td>Values passed to the method when it is called</td>
+       </tr>
+       <tr>
+           <td>Role</td>
+           <td>Receive values when the method is called</td>
+           <td>Assigned to the corresponding parameters</td>
+       </tr>
+       <tr>
+           <td>Purpose</td>
+           <td>Define the method's interface</td>
+           <td>Provide data to the method's interface</td>
+       </tr>
+       <tr>
+           <td>Location</td>
+           <td>Inside the method declaration</td>
+           <td>Inside the method call</td>
+       </tr>
+       <tr>
+           <td>Example</td>
+           <td><code>public void printName(String name)</code><br>In this example, <code>String name</code> is a parameter</td>
+           <td><code>printName("John Doe");</code><br>In this example, <code>"John Doe"</code> is an argument</td>
+       </tr>
+   </table>
+   </div>
+    </section>
+
+    <section class="oop-concept">
+      <div class="intro-align">
+        <h2>OOP Concept</h2>
+        <p>OOP : Object Oriented Programming</p>
+        <p>- To eleminate some flaws encountered in the procedural approach.</p>
+        <p>- Allows programmer to break down a problem into the no. of entities called objects and then build data and funtion around these entities.</p>
+        <p>- Combination of data and methods make up an object </p>
+        <p> ie. Object = data + method</p>
+      </div>
+    </section>
+</body>
+</html>
